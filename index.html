@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>t y p e</title>
+  <style>
+  .absolute {
+    position: absolute;
+  }
+  .animate {
+    transition: 0.5s ease-in-out;
+  }
+  </style>
 </head>
 <body>
   <input type="text"></input>
   <div id="display"></div>
-  <img src="./images/dino0.jpg">
+  <img class="absolute" src="./images/dino0.jpg">
+  <img id="fish" class="absolute animate" src="./images/fish0.jpeg" style="width: 80px; z-index: 1;">
   <script src="./index.js"></script>
 </body>
 </html>
