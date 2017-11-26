@@ -19,13 +19,13 @@ updateDisplay()
 
 input.addEventListener('input', (event) => {
   console.log('hi!')
-  const char = event.data
+  const char = event.data.toLowerCase()
   console.log(char)
   processType(char)
 })
 
 function processType(char){
-  const nextTarget = typeTarget[0]
+  const nextTarget = typeTarget[0].toLowerCase()
   if (nextTarget === char) typeTarget.shift()
   updateDisplay()
 }
